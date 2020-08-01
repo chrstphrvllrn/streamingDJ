@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+</head>
+
+<style>
+
+.box{
+    width:250px;
+    height:250px;
+
+    border: 2px solid grey;
+    cursor: pointer;
+	display: inline-block;
+	border-radius: 15%;
+
+
+}
+.box:hover{
+    width:250px;
+    height:250px;
+
+    border: 2px solid blue;
+    cursor: pointer;
+	display: inline-block;
+	border-radius: 15%;
+	transform: scale(1.05, 1.05);
+	 filter: saturate(2);
+	 box-shadow: 2px 2px blue;
+}
+
+
+.laugh{
+	background:url("Laugh.png");
+}
+.laugh2{
+
+background:url("Laugh2.png");
+}
+.laugh3{
+
+background:url("Laugh3.png");
+}
+.punch{
+
+background:url("punch.png");
+}
+.punch2{
+
+background:url("punch2.png");
+}
+.groovy{
+
+background:url("groovy.png");
+}
+.sneaky{
+
+background:url("sneaky.png");
+
+}.fail{
+
+background:url("fail.png");
+
+}
+.coin{
+
+background:url("coin.png");
+
+}
+
+.disappointed{
+
+background:url("disappointed.png");
+
+}
+.duck{
+
+background:url("duck.png");
+
+}
+.mumble{
+
+background:url("mumble.png");
+
+}
+.run{
+
+background:url("run.png");
+
+}
+.run2{
+
+background:url("run2.png");
+
+}
+.punch3{
+
+background:url("punch3.png");
+
+}
+
+.todong{
+
+background:url("todong.png");
+
+}
+.punch3{
+
+background:url("punch3.png");
+
+}
+.toing2{
+
+background:url("toing2.png");
+
+}
+.toing{
+
+background:url("toing.png");
+
+}
+.towawaw{
+
+background:url("towawaw.png");
+
+}
+.flute{
+
+background:url("flute.png");
+
+}
+.klkl{
+
+background:url("klkl.png");
+
+}
+
+.wow2{
+
+background:url("wow2.png");
+
+}
+.wow{
+
+background:url("wow.png");
+
+}
+
+</style>
+
+<body>
+
+<div id="todongbtn" class="box todong"> </div>
+<div id="toing2btn" class="box toing2"> </div>
+<div id="toingbtn" class="box toing"> </div>
+<div id="towawawbtn" class="box towawaw"> </div>
+<div id="flutebtn" class="box flute"> </div>
+<div id="klklbtn" class="box klkl"> </div>
+<div id="wow2btn" class="box wow2"> </div>
+<div id="wowbtn" class="box wow"> </div>
+
+<div id="groovybtn" class="box groovy"> </div>
+<div id="sneakybtn" class="box sneaky"> </div>
+<div id="laughbtn" class="box laugh">  </div>
+<div id="laugh2btn" class="box laugh2">  </div>
+<div id="laugh3btn" class="box laugh3">  </div>
+<div id="punchbtn" class="box punch">  </div>
+<div id="punch2btn" class="box punch2">  </div>
+<div id="punch3btn" class="box punch3">  </div>
+<div id="coinbtn" class="box coin">  </div>
+<div id="failbtn" class="box fail">  </div>
+
+
+<div id="disappointedbtn" class="box disappointed">  </div>
+<div id="duckbtn" class="box duck">  </div>
+<div id="mumblebtn" class="box mumble">  </div>
+<div id="runbtn" class="box run">  </div>
+<div id="run2btn" class="box run2">  </div>
+
+
+
+
+<audio  id="wow" > <source src="wow.mp3" type="audio/mpeg">   </audio>
+<audio  id="wow2" > <source src="wow2.mp3" type="audio/mpeg">   </audio>
+<audio  id="klkl" > <source src="klkl.mp3" type="audio/mpeg">   </audio>
+<audio  id="flute" > <source src="flute.mp3" type="audio/mpeg">   </audio>
+<audio  id="towawaw" > <source src="towawaw.mp3" type="audio/mpeg">   </audio>
+<audio  id="toing" > <source src="toing.mp3" type="audio/mpeg">   </audio>
+<audio  id="toing2" > <source src="toing2.mp3" type="audio/mpeg">   </audio>
+<audio  id="todong" > <source src="todong.mp3" type="audio/mpeg">   </audio>
+
+
+
+<audio  id="disappointed" > <source src="disappointed.mp3" type="audio/mpeg">   </audio>
+<audio  id="duck" > <source src="duck.mp3" type="audio/mpeg">   </audio>
+<audio  id="mumble" > <source src="mumble.mp3" type="audio/mpeg">   </audio>
+<audio  id="run" > <source src="run.mp3" type="audio/mpeg">   </audio>
+<audio  id="run2" > <source src="run2.mp3" type="audio/mpeg">   </audio>
+<audio  id="punch3" > <source src="punch3.mp3" type="audio/mpeg">   </audio>
+
+
+<audio  id="groovy" > <source src="groovy.mp3" type="audio/mpeg">   </audio>
+<audio  id="sneaky" > <source src="sneaky.mp3" type="audio/mpeg">   </audio>
+<audio  id="laugh" > <source src="Laugh.mp3" type="audio/mpeg">   </audio>
+<audio  id="laugh2" > <source src="Laugh2.mp3" type="audio/mpeg">   </audio>
+<audio  id="laugh3" > <source src="Laugh3.mp3" type="audio/mpeg">   </audio>
+
+<audio  id="punch" > <source src="punch.mp3" type="audio/mpeg">   </audio>
+<audio  id="punch2" > <source src="punch2.mp3" type="audio/mpeg">   </audio>
+<audio  id="coin" > <source src="audiocoin.mp3" type="audio/mpeg">   </audio>
+<audio  id="fail" > <source src="fail.mp3" type="audio/mpeg">   </audio>
+</body>
+
+<script>
+
+
+
+
+var wow =  $("#wow");
+var wow2 =  $("#wow2");
+var klkl =  $("#klkl");
+var flute =  $("#flute");
+var towawaw =  $("#towawaw");
+var toing2 =  $("#toing")
+var toing =  $("#toing2")
+var todong =  $("#todong")
+
+
+var fail =  $("#fail");
+var coin =  $("#coin");
+var groovy =  $("#groovy");
+
+var laugh =  $("#laugh");
+var laugh2 =  $("#laugh2");
+var laugh3 =  $("#laugh3");
+var sneaky =  $("#sneaky");
+var punch =  $("#punch");
+var punch2 =  $("#punch2");
+
+
+
+var disappointed =  $("#disappointed");
+var duck =  $("#duck");
+var mumble =  $("#mumble");
+var run =  $("#run");
+var run2 =  $("#run2");
+var punch3 =  $("#punch3");
+
+
+eventlisteners();
+
+
+
+
+function eventlisteners(){
+           var arr1 = [todongbtn, toing2btn, toingbtn, towawawbtn, flutebtn, klklbtn, wow2btn, wowbtn, groovybtn,sneakybtn,laughbtn,laugh2btn,laugh3btn, coinbtn, failbtn,  sneakybtn,punchbtn,punch2btn,disappointedbtn,duckbtn,mumblebtn,runbtn,run2btn,punch3btn];
+
+            arr1.forEach(function(element){
+			$(element).bind('click', eventhandler);
+			$(element).bind('mouseover',eventhandler);
+			$(element).bind('mouseout',eventhandler);
+            });
+
+
+     }
+
+	 function eventhandler (e){
+		console.log(e.type);
+        switch(e.type){
+              case "mouseover":
+                         switch(e.currentTarget.id) {
+
+                           }
+                      break;
+              case "click":
+			  console.log(e.currentTarget.id);
+                            switch(e.currentTarget.id) {
+
+							case  "groovybtn":
+								groovy.get(0).currentTime = 0;
+								groovy.get(0).volume = 0.5;
+								groovy.get(0).play();
+							break;
+							case  "sneakybtn":
+								sneaky.get(0).currentTime = 0;
+								sneaky.get(0).play();
+							break;
+                            case  "laughbtn":
+							    laugh.get(0).currentTime = 0;
+								laugh.get(0).play();
+							break;
+							case  "laugh2btn":
+								laugh2.get(0).currentTime = 0;
+								laugh2.get(0).play();
+							break;
+							case  "laugh3btn":
+								laugh3.get(0).currentTime = 0;
+								laugh3.get(0).play();
+							break;
+
+							case  "punchbtn":
+								punch.get(0).currentTime = 0;
+								punch.get(0).play();
+							break;
+							case  "punch2btn":
+								punch2.get(0).currentTime = 0;
+								punch2.get(0).play();
+							break;
+							case  "coinbtn":
+								coin.get(0).currentTime = 0;
+								coin.get(0).play();
+							break;
+							case  "failbtn":
+								fail.get(0).currentTime = 0;
+								fail.get(0).play();
+							break;
+							case  "disappointedbtn":
+								disappointed.get(0).currentTime = 0;
+								disappointed.get(0).play();
+							break;
+							case  "duckbtn":
+								duck.get(0).currentTime = 0;
+								duck.get(0).play();
+							break;
+							case  "mumblebtn":
+								mumble.get(0).currentTime = 0;
+								mumble.get(0).play();
+							break;
+							case  "runbtn":
+								run.get(0).currentTime = 0;
+								run.get(0).play();
+							break;
+							case  "run2btn":
+								run2.get(0).currentTime = 0;
+								run2.get(0).play();
+							break;
+							case  "punch3btn":
+								punch3.get(0).currentTime = 0;
+								punch3.get(0).play();
+							break;
+							case  "toing2btn":
+							toing2.get(0).currentTime = 0;
+							toing2.get(0).play();
+							break;
+							case  "toingbtn":
+							toing.get(0).currentTime = 0;
+							toing.get(0).play();
+							break;
+							case  "towawawbtn":
+							towawaw.get(0).currentTime = 0;
+							towawaw.get(0).play();
+							break;
+							case  "flutebtn":
+							flute.get(0).currentTime = 0;
+							flute.get(0).play();
+							break;
+							case  "klklbtn":
+							klkl.get(0).currentTime = 0;
+							klkl.get(0).play();
+							break;
+							case  "wow2btn":
+							wow2.get(0).currentTime = 0;
+							wow2.get(0).play();
+							break;
+							case  "wowbtn":
+							wow.get(0).currentTime = 0;
+							wow.get(0).play();
+							break;
+							case  "todongbtn":
+							todong.get(0).currentTime = 0;
+							todong.get(0).play();
+							break;
+
+              break;
+              case "mouseout":
+                            switch(e.currentTarget.id){
+                                case  "close":
+
+                                break;
+
+                            }
+              break;
+
+        }
+    }
+	 }
+
+</script>
+
+
+</html>
